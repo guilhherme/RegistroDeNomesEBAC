@@ -137,7 +137,8 @@ int main() //responsável pelo menu principal
 			printf("Selecione a opção desejada:\n\n");
 			printf("\t1 - Registrar Nome\n");
 			printf("\t2 - Consultar Nome\n");
-			printf("\t3 - Deletar Nome\n\n\n\n");
+			printf("\t3 - Deletar Nome\n");
+			printf("\t4 - Sair do sistema\n\n");
 			printf("Opção: ");//fim do menu
 	
 	scanf("%d", &opcao);//armazenando a escolha do usuario
@@ -156,6 +157,11 @@ int main() //responsável pelo menu principal
 		
 		case 3:
 			deletar();
+			break;
+			
+		case 4:
+			printf("Obrigado por utilizar nosso sistema! Até mais.\n");
+			return 0;
 			break;
 			
 		default:
